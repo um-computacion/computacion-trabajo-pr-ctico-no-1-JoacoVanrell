@@ -1,5 +1,12 @@
 import unittest
-from funciones_decimalToroman import decimal_a_romano 
+import sys
+import os
+
+# Agrega la carpeta 'src' al sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+# Importa la función desde el archivo correcto
+from funciones_decimalToroman import decimal_a_romano
 
 class TestDecimalARomano(unittest.TestCase):
    
